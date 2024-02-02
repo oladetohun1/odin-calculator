@@ -1,0 +1,27 @@
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#display {
+    grid-column: span 4;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.backspace {
+    grid-column: span 3;
+}
